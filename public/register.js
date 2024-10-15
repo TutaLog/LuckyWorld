@@ -1,10 +1,10 @@
 document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impedisce l'invio del form
+    event.preventDefault();
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Invia la richiesta di registrazione al server
+
     fetch('/register', {
         method: 'POST',
         headers: {
