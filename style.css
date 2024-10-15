@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    line-height: 1.4;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 4px solid orange;
+}
+
+
+header h1 {
+    margin-bottom: 1px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+}
+
+
+
+
+#home {
+    background:
+linear-gradient(rgba(0, 0, 0, 0.5),
+rgba(0, 0, 0, 0.5)),
+url("community.jpg") no-repeat
+center center/cover;
+    color: white;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: columm;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px
+rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    background-color: orange;
+    transition: background-color 0.3s ease;
+    padding: 15px 30px;
+    text-decoration: solid;
+    border-radius: 200px;
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#events .event{
+    background-color: #28a745;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+
+
+#about::before, #events:before, #contact:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #28a745;
+}
+
+
+form {
+    display: flex;
+    flex-direction: columm;
+    align-items: flex-start;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px;
+    border: 1px solid #ffffff;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+
+
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: black;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+
+footer p::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #28a745;
+}
+
+
+
+
